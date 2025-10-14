@@ -1,0 +1,28 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px auto 25px;
+}
+
+.square {
+  background-color: #fff;
+  border: 3px solid #007bff;
+  border-radius: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:disabled {
+  cursor: default;
+  color: #444;
+  background-color: #f8f9fa;
+}
